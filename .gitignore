@@ -1,0 +1,9 @@
+/.vscode/
+/Binaries/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/*.code-workspace
+/*.xcworkspace
+
+.env
