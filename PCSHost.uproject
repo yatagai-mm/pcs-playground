@@ -3,9 +3,6 @@
 	"EngineAssociation": "5.8",
 	"Category": "",
 	"Description": "Development host for the PCS plugin.",
-	"AdditionalPluginDirectories": [
-		".."
-	],
 	"Modules": [
 		{
 			"Name": "PCSHost",

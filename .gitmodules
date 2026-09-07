@@ -1,0 +1,3 @@
+[submodule "Plugins/PCS"]
+	path = Plugins/PCS
+	url = https://github.com/yatagai-mm/pcs.git
