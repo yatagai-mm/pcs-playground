@@ -15,5 +15,10 @@ public class PCSHost : ModuleRules
 			});
 
 		PrivateDependencyModuleNames.Add("PCS");
+
+		if (Target.bBuildEditor)
+		{
+			PrivateDependencyModuleNames.AddRange(new string[] { "UnrealEd", "PropertyEditor", "Slate", "SlateCore" });
+		}
 	}
 }

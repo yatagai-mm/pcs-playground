@@ -103,3 +103,25 @@ while the Actor is playing.
 
 The sample Actor in `Source/PCSHost` demonstrates a scene root with an attached
 PCS component. The included level is `Content/pcs-host-actor.umap`.
+
+## Recent input settings
+
+Select a **Point Cloud Sequence** component in the editor and open **PCS Input
+History** in its Details panel. **Recent Settings** restores a saved configuration;
+**Save Current Settings** records the current configuration immediately.
+
+Edits to source, playback, rendering, and component transform settings are also
+saved automatically after one second without further edits. Empty directories or
+regular expressions are not saved. The five most recently used configurations
+are retained; identical configurations are merged and moved to the top. Different
+settings for the same directory remain separate entries. Directory paths are
+normalized before comparison.
+
+History includes the directory, regex, frame rate, playback rate, loop, auto play,
+point size, sRGB conversion, point material, and relative component transform.
+Actor placement, the current playback frame, and scene/camera settings are not
+part of an input configuration. Restoring an entry rescans its source and loads
+its first frame. History is shared across PCS components in this host project and
+persists locally in `Saved/Config/MacEditor/EditorPerProjectUserSettings.ini`
+(the platform directory differs on other operating systems). It is not committed
+with the level or stored in the PCS plugin.
