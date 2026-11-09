@@ -7,3 +7,6 @@
 /*.xcworkspace
 
 .env
+
+.DS_Store
+/Source/PCSHost/Tests/
